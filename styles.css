@@ -12,7 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #43AFFC;
+    background-color: #003c66;
     /* background-image: url('https://media.istockphoto.com/id/1257951336/es/foto/paraguas-transparente-bajo-la-lluvia-contra-gotas-de-agua-de-fondo-de-salpicaduras-concepto-de.jpg?s=612x612&w=0&k=20&c=8_6j8YMeJYk8z_r1nIgo93Ow7SWkkeIXkVqvQjOMWUQ=');
     background-repeat: no-repeat;
     background-size: cover; */
@@ -25,7 +25,7 @@ body{
 }
 
 .wrapper header{
-    color: #42AFFC;
+    color: #003c66;
     font-size: 21px;
     font-weight: 500;
     padding: 16px 15px;
@@ -38,6 +38,12 @@ header i{
     cursor: pointer;
     font-size: 0px;
     margin-right:8px;
+}
+
+header i:hover{
+    color: white;
+    background-color: #42AFFC;
+    border-radius: 50%;
 }
 
 .wrapper.active header i{
@@ -114,8 +120,15 @@ header i{
 
 .input-part button{
     color: #fff;
+    font-weight: 500;
     cursor: pointer;
     background: #43AFFC;
+}
+
+.input-part button:hover{
+    color: #43AFFC;
+    background: #fff;
+    border: 2px solid #43AFFC;
 }
 
 .wrapper .weather-part{
@@ -207,9 +220,32 @@ header i{
     pad: 0 2px 0 1px;
 }
 
-.details p{
+.details p {
     font-size: 14px;
     margin-top: -6px
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #003c66;
+}
+
+footer i {
+    color: rgb(160, 9, 9);
+    font-size: 13px;
+}
+
+footer a {
+    color: #003c66;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover{
+    color: #43AFFC;
 }
 
 @media (min-width: 250px){
