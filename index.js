@@ -62,16 +62,22 @@ function weatherDetails(info){
         // Set images based on the weather id from api.
         if(id == 800){
             wIcon.src = "Weather Icons/clear.svg";
+            document.body.style.backgroundImage = "url('Weather Images/clear sky.jpg')";
         }else if(id >= 200 && id <= 232){
             wIcon.src = "Weather Icons/storm.svg";
+            document.body.style.backgroundImage = "url('Weather Images/Storm Weather.jpg')";
         }else if(id >= 600 && id <= 622){
             wIcon.src = "Weather Icons/snow.svg";
+            document.body.style.backgroundImage = "url('Weather Images/Snow Weather.jpg')";
         }else if(id >= 701 && id <= 781){
             wIcon.src = "Weather Icons/haze.svg";
+            document.body.style.backgroundImage = "url('Weather Images/Haze Weather.jpg')";
         }else if(id >= 801 && id <= 804){
             wIcon.src = "Weather Icons/cloud.svg";
+            document.body.style.backgroundImage = "url('Weather Images/Cloudy Sun.jpg')";
         }else if((id >= 300 && id <= 321) || (id >= 500 && id <= 531)){
             wIcon.src = "Weather Icons/rain.svg";
+            document.body.style.backgroundImage = "url('Weather Images/Rainy Weather.jpg')";
         }
 
         // pass these values to a particular html element
