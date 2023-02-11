@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,51 +15,54 @@ body{
     background-color: #003c66;
     background-image: url('');
     background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
+    height: 247px;
 }
 
-.wrapper{
+.wrapper {
     width: 400px;
     border-radius: 7px;
-    background : #fff;
+    background: #fff;
 }
 
-.wrapper header{
+.wrapper header {
     color: #003c66;
     font-size: 21px;
     font-weight: 500;
     padding: 16px 15px;
-    display:flex;
+    display: flex;
     align-items: center;
     border-bottom: 1px solid #bfbfbb;
 }
 
-header i{
+header i {
     cursor: pointer;
     font-size: 0px;
-    margin-right:8px;
+    margin-right: 8px;
 }
 
-header i:hover{
+header i:hover {
     color: white;
-    background-color: #42AFFC;
+    background-color: #003c66;
     border-radius: 50%;
 }
 
-.wrapper.active header i{
+.wrapper.active header i {
     font-size: 30px;
     margin-left: 5px;
 }
 
-.wrapper .input-part{
+.wrapper .input-part {
     margin: 20px 25px 30px;
 }
 
-.wrapper.active .input-part{
+.wrapper.active .input-part {
     display: none;
 }
 
-.input-part .info-txt{
+.input-part .info-txt {
     display: none;
     font-size: 17px;
     text-align: center;
@@ -68,21 +71,21 @@ header i:hover{
     margin-bottom: 15px;
 }
 
-.info-txt.error{
+.info-txt.error {
     display: block;
     color: #721624;
-    background: #f8d7da; 
+    background: #f8d7da;
     border: 1px solid #f5c6cb;
 }
 
-.info-txt.pending{
+.info-txt.pending {
     display: block;
     color: #0c5460;
-    background: #88e9c1; 
+    background: #88e9c1;
     border: 1px solid #bee5eb;
 }
 
-.input-part :where(input,button){
+.input-part :where(input, button) {
     width: 100%;
     height: 55px;
     border: none;
@@ -91,16 +94,16 @@ header i:hover{
     border-radius: 7px;
 }
 
-.input-part input{
+.input-part input {
     text-align: center;
     border: 1px solid #bfbfbf;
 }
 
-.input-part input:is(:focus, :valid){
-    border: 2px solid #43AFFC;
+.input-part input:is(:focus, :valid) {
+    border: 2px solid #003c66;
 }
 
-.input-part .separator{
+.input-part .separator {
     height: 1px;
     width: 100%;
     display: flex;
@@ -110,7 +113,7 @@ header i:hover{
     justify-content: center;
 }
 
-.separator::before{
+.separator::before {
     content: "or";
     color: #ccc;
     font-size: 19px;
@@ -118,20 +121,20 @@ header i:hover{
     background: #fff;
 }
 
-.input-part button{
+.input-part button {
     color: #fff;
     font-weight: 500;
     cursor: pointer;
-    background: #43AFFC;
+    background: #003c66;
 }
 
-.input-part button:hover{
-    color: #43AFFC;
+.input-part button:hover {
+    color: #003c66;
     background: #fff;
-    border: 2px solid #43AFFC;
+    border: 2px solid #003c66;
 }
 
-.wrapper .weather-part{
+.wrapper .weather-part {
     margin: 30px 0px 0px;
     display: none;
     align-items: center;
@@ -140,50 +143,50 @@ header i:hover{
 }
 
 
-.wrapper.active .weather-part{
+.wrapper.active .weather-part {
     display: flex;
 }
 
-.weather-part img{
+.weather-part img {
     max-width: 125px;
 }
 
-.weather-part .temp{
+.weather-part .temp {
     display: flex;
     font-size: 72px;
     font-weight: 500;
 }
 
-.weather-part .temp .numb{
+.weather-part .temp .numb {
     font-weight: 600;
 }
 
-.weather-part .temp .deg{
+.weather-part .temp .deg {
     font-size: 40px;
     margin: 10px 5px 0 0;
     display: block;
 }
 
-.weather-part .weather{
+.weather-part .weather {
     font-size: 21px;
     text-align: center;
     margin: -5px 20px 15px;
 }
 
 
-.weather-part .location{
+.weather-part .location {
     display: flex;
     align-items: center;
     font-size: 21px;
     margin-bottom: 30px;
 }
 
-.location i{
+.location i {
     font-size: 22px;
     margin-right: 5px;
 }
 
-.weather-part .bottom-details{
+.weather-part .bottom-details {
     width: 100%;
     display: flex;
     align-items: center;
@@ -191,7 +194,7 @@ header i:hover{
     justify-content: space-between;
 }
 
-.bottom-details .column{
+.bottom-details .column {
     width: 100%;
     display: flex;
     padding: 15px 0;
@@ -199,22 +202,23 @@ header i:hover{
     justify-content: center;
 }
 
-.column i{
-    color: #43AFFC;
+.column i {
+    color: #003c66;
     font-size: 40px;
 }
 
-.column.humidity{
+.column.humidity {
     border-left: 1px solid #bfbfbf;
 }
 
-.details .temp, .humidity span{
+.details .temp,
+.humidity span {
     font-size: 18px;
     font-weight: 500;
     margin-top: -3px;
 }
 
-.details .temp .deg{
+.details .temp .deg {
     margin: 0;
     font-size: 17px;
     pad: 0 2px 0 1px;
@@ -244,12 +248,12 @@ footer a {
     font-weight: 500;
 }
 
-footer a:hover{
-    color: #43AFFC;
+footer a:hover {
+    color: #003c66;
 }
 
-@media (min-width: 250px){
-    .wrapper{
+@media (min-width: 250px) {
+    .wrapper {
         margin: 15px;
     }
 }
